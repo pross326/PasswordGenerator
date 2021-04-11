@@ -20,6 +20,9 @@ const animals = ['lion','tiger','bear','elephant','coyote','parrot','iguana','te
 //List of places length 10
 const cities = ['newyork','toronto','chicago','bronx','brooklyn','rolesville','raleigh','ronkonkoma','manhattan','newrochelle']
 
+//List of special character
+const specialChar = ['!','@','#','$','%','&','-','!','&','!']
+
 //Shuffle function
 function shuffle (array) {
 array.sort(() => Math.random() - 0.5)
@@ -42,6 +45,11 @@ for (let i = 0; i<=length-1; i++){
 for (let i = 0; i<=length-1; i++){
   Pword.push(lowercaseLetters[random10()])
 }
+
+for (let i = 0; i<=length-1; i++){
+Pword.push(specialChar[random10()])
+}
+  
 shuffle(Pword)
 const password = Pword.join('')
 console.log(password)
