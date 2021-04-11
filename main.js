@@ -49,5 +49,3 @@ console.log(password)
 }
 createPword()
 
-
-//Just checking something
