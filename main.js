@@ -28,7 +28,7 @@ function shuffle (array) {
 array.sort(() => Math.random() - 0.5)
 }
 
-const createPword = (length=2) => {
+const createPword = (length=2,charLength) => {
   const Pword = []
 for (let i = 0; i<=length-1; i++){
   Pword.push(random10())
@@ -45,14 +45,14 @@ for (let i = 0; i<=length-1; i++){
 for (let i = 0; i<=length-1; i++){
   Pword.push(lowercaseLetters[random10()])
 }
-
 for (let i = 0; i<=length-1; i++){
-Pword.push(specialChar[random10()])
+  Pword.push(specialChar[random10()])
 }
-  
 shuffle(Pword)
 const password = Pword.join('')
-console.log(password)
+console.log(`Your new random password is: ${password.slice(0,charLength)}`)
+
+}
 
 }
 createPword()
