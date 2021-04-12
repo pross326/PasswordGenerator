@@ -15,7 +15,7 @@ const uppercaseLetters = []
 lowercaseLetters.forEach(letter => uppercaseLetters.push(letter.toUpperCase()))
 
 //List of animals length 10
-const animals = ['lion','tiger','bear','elephant','coyote','parrot','iguana','tern','snake','gecko']
+const animals = ['dog','cat','dog','dog','cat','cat','dog','cat','dog','cat']
 
 //List of places length 10
 const cities = ['newyork','toronto','chicago','bronx','brooklyn','rolesville','raleigh','ronkonkoma','manhattan','newrochelle']
